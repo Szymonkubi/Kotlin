@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String) {
     val context = LocalContext.current
     Column {
-        Text(text = "Witaj$name!")
+        Text(text = "Witaj $name!")
         Text(text = "Wybierz gdzie chcesz przejsc:")
         Przycisk(text = "Lista Dokumentow", onClick = { navigateToDokumentActivity(context) })
         Przycisk(text = "Kontrahent", onClick = { navigateToKontrahentActivity(context) })
